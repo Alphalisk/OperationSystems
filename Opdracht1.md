@@ -223,3 +223,24 @@ fi
 
 **d)** Piping. Wat is het commando om alle processen met in de PID“100” te tonen? 
 (gebruik hierbij grep) 
+
+*Uitwerking*
+
+Hierbij de gevraagde commando:
+
+`ps aux | grep 100`
+
+* ps aux
+* a -> processen van alle gebruikers
+* u -> Extra details tonen (gebruiker, CPU-gebruik, starttijd)
+* x -> Toont processen zonder een gekoppelde terminal
+* | piping -> stuurt de uitvoer van het voorgaande naar het volgende 
+* grep 100 -> filtert alleen de regels die 100 bevatten.
+
+*Screenshot*
+
+![alt text](screenshots/image_d.png)
+
+Zoals te zien worden meer regels weergeven met 100. Om accuraat op een kolom te zoeken kan `awk` gebruikt worden.
+Met grep krijg je meer regels dan gevraagd, namelijk elke regel waar ergens 100 staat.
+
