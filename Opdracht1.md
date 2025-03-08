@@ -244,3 +244,23 @@ Hierbij de gevraagde commando:
 Zoals te zien worden meer regels weergeven met 100. Om accuraat op een kolom te zoeken kan `awk` gebruikt worden.
 Met grep krijg je meer regels dan gevraagd, namelijk elke regel waar ergens 100 staat.
 
+
+**e)** Path variabele. Wat moet je aan je PATH variabele veranderen om niet steeds ./filenaam i.p.v. 
+filenaam inte typen? Wat zou je moeten toevoegen aan je shell startup script ? 
+
+*Uitwerking*
+Bij het testen werkt het zo wie zo al zonder ./
+Dus deze opdracht is onnodig.
+
+Maar het kan op de volgende manier:
+tijdelijk:
+`export PATH=.:$PATH`
+
+permanent in startupfile:
+`echo 'export PATH=.:$PATH' >> ~/.profile`
+`source ~/.profile`  # Direct toepassen zonder opnieuw in te loggen
+
+*Screenshot*
+Hierbij dat het al werkt:
+
+![alt text](screenshots/image_e.png)
