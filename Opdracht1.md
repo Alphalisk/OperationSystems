@@ -1,5 +1,6 @@
 # Linux - opdracht 1
 
+## Basiscommando's
 
 **a)** Listing files. Met welk commando kun je alle .java files op het systeem tonen die voldoen aan de 
 volgende voorwaarden : 
@@ -32,4 +33,12 @@ localadmin@Ubuntu-2:~$ find / -type f -name "*.java" -mtime -7 -exec grep -l "Ma
 
 
 **b)** Links (bestanden). Wat is het verschil tussen een symbolische link en een gewone (harde) link? 
-Hint : wat gebeurt er in beide gevallen als we de 'target' van de link verplaatsen of verwijderen? 
+Hint : wat gebeurt er in beide gevallen als we de 'target' van de link verplaatsen of verwijderen?
+
+*Uitwerking*
+
+* Een gewone/harde link is een link naar de inode en de inhoud van een target bestand. Dat betekent dat het verwijderen van het target bestand er niet voor zorgt dat 
+
+*Screenshot*
+
+![alt text](screenshots/image_b.png)
