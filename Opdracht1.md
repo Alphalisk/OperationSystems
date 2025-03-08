@@ -264,3 +264,21 @@ permanent in startupfile:
 Hierbij dat het al werkt:
 
 ![alt text](screenshots/image_e.png)
+
+
+**f)** Manual page. Hoe kun je in de manual page (commando “man”) zoeken op een string ?  
+(Tip : defaultgebruik ‘man’ de less terminal pager).  
+Hoe doe je een “next search”. Hoe een pagina omhoog of omlaag ? 
+
+*Uitwerking*
+allereerst de commando `man` op een lijst:
+
+`man ls`
+
+Vervolgens is het mogelijk te zoeken naar een string door `/` te klikken gevolgt door de te zoeken string.
+Alle selecties worden gehighlight.
+
+Met de `n` knop ga je naar de volgende en met `N` naar de vorige. 
+
+
+*Screenshot*
